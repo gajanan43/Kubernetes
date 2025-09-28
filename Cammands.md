@@ -15,10 +15,15 @@
 15) kubectl create -f namespace.yml → Create a Namespace using YAML file
 16) kubectl apply -f namespace.yml → Create a Namespace using YAML file
 17) kubectl exec -it nginx-pod -n nginx -- bash → Get an interactive shell inside your pod’s container
-18) kubectl delete -f pod.yml → remove the pod defined in that YAML
+18) kubectl delete -f pod.yml → Delete all pods that was created from your pod.yml 
 19) kubectl scale deployment/nginx-deployment -n nginx --replicas=2 → Scaled deployment name nginx-deployment in the nginx namespace to 2 replicas (pods)
 20) kubectl set image deployment/nginx-deployment -n nginx nginx=nginx:1.26.2 → Updates the container image inside your Deployment(Beause of deployment support a rollout)
-21) 
+21) cp deployment.yml replicasets.yml → Cppy all data inside the deployment.yml file into replicasets.yml file
+22) kubectl get replicasets -n nginx → It will list all the ReplicaSets in the nginx namespace
+23) kubectl get pods -n nginx -o wide → See a detailed list of pods in the nginx namespace
+24) kubectl logs pod/demo-job-56dg7 -n nginx → See the output of this given pod(Job: Hello Dosto!)
+
+
 
 
 
