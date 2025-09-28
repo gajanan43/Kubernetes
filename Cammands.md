@@ -23,7 +23,7 @@
 23) kubectl get pods -n nginx -o wide → See a detailed list of pods in the nginx namespace
 24) kubectl logs pod/demo-job-56dg7 -n nginx → See the output of this given pod(Job: Hello Dosto!)
 25) kubectl describe pod/<pod-name> -n nginx → Detailed information about a specific pod
-26) kubectl get pv -n nginx → Show all the Persistent Volumes in the namespace nginx
+26) kubectl get pv → Shows all PersistentVolumes in the cluster (no -n needed, since PVs are cluster-scoped)
 27) kubectl get pvc -n nginx → Show all the Persistent Volumes Claim in the namespace nginx(namespace-scoped)
 
 
