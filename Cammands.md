@@ -12,7 +12,7 @@
 12) kubectl run nginx --image=nginx -n nginx → nginx Pod was create in the nginx namespace
 13) kubectl get pods -n <namespace-name> → Show all pods in the specific namespace
 14) kubectl delete pod <pod-name> → Delete the pod
-15) 
+15) kubectl apply -f namespace.yml → Create a Namespace using yml file
 
 
 
