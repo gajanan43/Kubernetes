@@ -27,7 +27,8 @@
 27) kubectl get pvc -n nginx → Show all the Persistent Volumes Claim in the namespace nginx(namespace-scoped)
 28) kubectl get all -n nginx → Lists all namespaced resources (like Pods, Deployments, ReplicaSets, Services, etc.) in the nginx namespace
 29) kubectl port-forward service/nginx-service -n nginx 80:80 --address=0.0.0.0 → Forwards traffic from port 80 on your local machine to port 80 of the nginx-service inside the nginx namespace, and --address=0.0.0.0 makes it accessible from all network interfaces (not just localhost)
-30) 
+30) kubectl get deployments --all-namespaces → Lists all deployments across every namespace in your Kubernetes cluster
+31) kubectl get pods --all-namespaces → Lists all pods in all namespaces in your cluster
 
 
 
