@@ -31,7 +31,8 @@
 31) kubectl get pods --all-namespaces → Lists all pods in all namespaces in your cluster
 32) kubectl get service -n ingress-nginx → Checking the Ingress Controller’s Service
 33) kubectl get pods -n mysql --watch → Watch continuously live pods in mysql namespace
-34) 
+34) kubectl taint node minikube pod=true:NoSchedule → We cann't schedule pod on this node
+35) kubectl taint node minikube pod=true:NoSchedule-  → Untaint
 
 
 
