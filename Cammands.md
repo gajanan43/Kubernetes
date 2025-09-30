@@ -33,6 +33,8 @@
 33) kubectl get pods -n mysql --watch → Watch continuously live pods in mysql namespace
 34) kubectl taint node minikube pod=true:NoSchedule → We cann't schedule pod on this node
 35) kubectl taint node minikube pod=true:NoSchedule-  → Untaint
+36) minikube addons enable metrics-server → enable the metrics server(HPA/NPA)
+
 
 
 
