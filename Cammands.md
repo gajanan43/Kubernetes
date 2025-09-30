@@ -30,7 +30,8 @@
 30) kubectl get deployments --all-namespaces → Lists all deployments across every namespace in your Kubernetes cluster
 31) kubectl get pods --all-namespaces → Lists all pods in all namespaces in your cluster
 32) kubectl get service -n ingress-nginx → Checking the Ingress Controller’s Service
-33) 
+33) kubectl get pods -n mysql --watch → Watch continuously live pods in mysql namespace
+34) 
 
 
 
