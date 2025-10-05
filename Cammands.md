@@ -36,6 +36,7 @@
 36) minikube addons enable metrics-server → enable the metrics server(HPA/NPA)
 37) kubectl auth whoami → Show the curruent user information(kub-admin)
 38) kubectl auth can-i get pods -n apache --as=apache-user → apache user cann't access of pods(for that needs bind the role to this user)
+39) kubectl auth can-i get pods --as=apache-user -n apache → apache user cann't access of pods(for that needs bind the role to this user)
 
 
 
