@@ -34,6 +34,8 @@
 34) kubectl taint node minikube pod=true:NoSchedule → We cann't schedule pod on this node
 35) kubectl taint node minikube pod=true:NoSchedule-  → Untaint
 36) minikube addons enable metrics-server → enable the metrics server(HPA/NPA)
+37) kubectl auth whoami → Show the curruent user information(kub-admin)
+38) kubectl auth can-i get pods -n apache --as=apache-user → apache user cann't access of pods(for that needs bind the role to this user)
 
 
 
