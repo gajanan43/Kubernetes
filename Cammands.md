@@ -34,11 +34,12 @@
 34) kubectl taint node minikube pod=true:NoSchedule → We cann't schedule pod on this node
 35) kubectl taint node minikube pod=true:NoSchedule-  → Untaint
 36) minikube addons enable metrics-server → enable the metrics server(HPA/NPA)
-37) kubectl top node → See all the nodes allocated memory & CPU
-38) kubectl top pod -n NAMESPACE  → See top usesages pod in the namespace 
-39) kubectl auth whoami → Show the curruent user information(kub-admin)
-40) kubectl auth can-i get pods -n apache --as=apache-user → apache user cann't access of pods(for that needs bind the role to this user)
-41) kubectl auth can-i get pods --as=apache-user -n apache → apache user cann't access of pods(for that needs bind the role to this user)
+37) while true; do wget -q -O- http://apache-service.apache.svc.cluster.local; done → To build a load on load-generator pod
+38) kubectl top node → See all the nodes allocated memory & CPU
+39) kubectl top pod -n NAMESPACE  → See top usesages pod in the namespace 
+40) kubectl auth whoami → Show the curruent user information(kub-admin)
+41) kubectl auth can-i get pods -n apache --as=apache-user → apache user cann't access of pods(for that needs bind the role to this user)
+42) kubectl auth can-i get pods --as=apache-user -n apache → apache user cann't access of pods(for that needs bind the role to this user)
 
 
 
