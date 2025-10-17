@@ -43,6 +43,7 @@
 43) kubectl get rolebinding -n apache → Lists all RoleBindings in the apache namespace
 44) kubectl auth can-i get pods -n apache --as=apache-user → apache user cann't access of pods(for that needs bind the role to this user)
 45) kubectl auth can-i get pods --as=apache-user -n apache → apache user cann't access of pods(for that needs bind the role to this user)
+46) kubectl auth can-i get pods -n apache --as=system:serviceaccount:apache:apache-user →  Tests if the ServiceAccount named apache-user in namespace apache can access Pods.
 
 
 
